@@ -1,0 +1,13 @@
+def main():
+    f=open("a1.txt",encoding="UTF-8")
+    contenido = f.read()
+    print(contenido)
+    f.close()
+    f2=open("a2.txt",encoding="UTF-8")
+    contenido2 = f2.read()
+    print(contenido2)
+    f2.close()
+    f3=open("lista_alumnos.txt","w",encoding="UTF-8")
+    f3.write(contenido+"\n"+contenido2)
+    f3.close()
+main()
